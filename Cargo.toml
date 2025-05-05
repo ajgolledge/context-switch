@@ -22,6 +22,7 @@ context-switch-core = { workspace = true }
 openai-dialog = { path = "services/openai-dialog" }
 azure = { workspace = true }
 azure-speech = { workspace = true }
+aristech = { workspace = true }
 
 # basic
 
