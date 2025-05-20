@@ -20,7 +20,14 @@ impl Default for Registry {
                 ("azure-synthesize", Box::new(azure::AzureSynthesize) as _),
                 ("azure-translate", Box::new(azure::AzureTranslate) as _),
                 ("openai-dialog", Box::new(openai_dialog::OpenAIDialog) as _),
-                ("aristech-transcribe", Box::new(aristech::AristechTranscribe) as _),
+                (
+                    "aristech-transcribe",
+                    Box::new(aristech::AristechTranscribe) as _,
+                ),
+                (
+                    "aristech-synthesize",
+                    Box::new(aristech::AristechSynthesize) as _,
+                ),
             ]
             .into(),
         }
